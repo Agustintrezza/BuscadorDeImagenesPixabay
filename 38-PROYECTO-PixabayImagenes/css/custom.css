@@ -1,0 +1,11 @@
+body {
+  background-image: url(/img/cosmos-5809271_640.png);
+}
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+.resultado {
+  max-width: 90%;
+}

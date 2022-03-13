@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Imágenes Pixabay</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <main class="flex justify-center">
+    <section class="bg-black bg-opacity-50 ml-10 mr-10 p-6 mt-24 md:mt-22 w-10/12 sm:w-6/12 lg:w-6/12 mb-10 font-light rounded-lg">
+    <h1 class=" text-center text-3xl text-white my-10 font-ligth uppercase ">Buscador de Imágenes Pixabay</h1>
+
+    <div class="buscador max-w-lg mx-auto">
+        <form id="formulario" class="">
+            <div>
+                <label 
+                    class="block text-white font-ligth uppercase text-base mb-8 text-center mt-12 py-2"
+                >Escribí lo que quieras buscar!</label>
+                <input 
+                    type="text"
+                    class="mt-5 rounded-lg p-2 w-11/12 mx-3 flex justify-center mb-8 outline-none"
+                    placeholder="Café, fútbol etc..."
+                    id="termino"
+                />
+
+                <input 
+                    type="submit"
+                    value="Buscar Imágenes"
+                    class="mt-6 w-11/12 ml-3 mb-20 flex outline-none text-sm justify-center py-2 bg-yellow-400 cursor-pointer font-light uppercase hover:bg-yellow-500 rounded-lg"
+                >   
+            </div>
+        </form>
+    </div>
+    </section>
+</main>
+
+    <div id="resultado" class="container mx-auto mt-10 flex flex-wrap bg-indigo-100 rounded-lg"></div>
+
+    <div id="paginacion" class="container mx-auto p-1 mb-10 mt-10 text-center flex flex-wrap justify-center">
+        
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
